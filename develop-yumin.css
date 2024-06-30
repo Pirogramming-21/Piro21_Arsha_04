@@ -3,8 +3,9 @@
 
 /*header css*/
 header {
-    display: fixed;
-    /*background-color: gray;*/
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 .header--top {
     background-color: black;
@@ -16,6 +17,7 @@ header {
     gap:20px;
 }
 .header--top > img {
+    cursor: pointer;
     height: 25px;
 }
 .header--top-icon{
@@ -28,6 +30,7 @@ header {
 }
 
 .header--top-Arsha {
+    cursor: pointer;
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -36,7 +39,6 @@ header {
 .header--top-Arsha > div {
     font-size: 16px;
     color: #ffffff;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .header--top-Arsha > i {
@@ -45,10 +47,12 @@ header {
     color: rgba(255,255,255,.5);
 }
 .header--top > i {
+    cursor: pointer;
     font-size: 22px;
     color: rgba(255,255,255,.5);
 }
 .header--top-download {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,7 +65,7 @@ header {
 
 /*header-navigation bar css*/
 .header--main{
-    background-color: green;
+    background-color: rgba(40, 58, 90, 0.9);;
     height: 88.5px;
 
 }
@@ -70,8 +74,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+
     padding: 15px 0;
-    margin: 0 auto;
+    margin: 0 10%;
 }
 .header--nav > h1 {
     font-size: 30px;
@@ -80,6 +85,8 @@ header {
     font-weight: 500px;
     height: 58.5px;
     width: 100%;
+    color: #ffffff;
+    align-content: center;
 }
 .header--nav-menu {
     display: flex;
@@ -88,6 +95,7 @@ header {
 .header--nav-menu > a {
     padding: 18px 15px;
     text-decoration: none;
+    color: #ffffff;
 }
 .header--nav > a {
     padding: 8px 25px;
@@ -97,7 +105,8 @@ header {
     font-size: 14px;
     border-radius: 50px;
     text-decoration: none;
-    background-color: var(--accent-color);
+    background-color: #00a6eb;
+    color: #ffffff;
 }
 
 
@@ -258,14 +267,21 @@ header {
     display: flex;
     justify-content: space-around;  
 }
-.pricing--box > div > div {
+.pricing--box-content > div {
     margin-bottom: 15px;
 }
-.pricing--box > div {
+.pricing--box-content {
     display: flex;
     flex-direction: column;
     margin: 24px 20px 0;
-    background-color: aqua;
+    background-color: #ffffff;
+    padding: 60px 50px;
+}
+.pricing--box-text {
+    padding: 20px 0 20px;
+}
+.pricing--box-text > div {
+    margin-bottom: 20px;
 }
 .pricing--box-plan {
     font-weight: 600;
@@ -276,5 +292,173 @@ header {
     font-size: 48px;
     font-weight: 400;
     margin-bottom: 0;
+    display: inline;
+}
+.pricing--box-content > div > span {
+    font-size: 18px;
+    color: color-mix(in srgb, #444444, transparent 30%);
+}
+.pricing--box-text > div > i {
+    font-size: 24px;
+    margin-right: 5px;
+}
+.pricing--box-content > a {
+    width: 135.36px;
+    height: 44px;
+    border: 1px solid #47B2E4;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    color: #47b2e4;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+.pricing--box-content > a:hover {
+    background-color: #47B2E4;
+    color: #ffffff;
+    transition: 0.3s;
 }
 
+/*footer sectioncss*/
+footer {
+    height: auto;
+    scroll-margin-top: 88px;
+    padding-top:60px;
+    padding-bottom:60px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.footer--join {
+    padding: 50px 0;
+}
+.footer--join > h4 {
+    font-weight: bold;
+    font-size: 24px;
+    padding-bottom: 12px;
+    color: #37517e;
+    margin-bottom: 8px;
+}
+.footer--join > p {
+    margin-bottom: 16px;
+}
+.footer--join > div {
+    display: flex;
+
+    justify-content: center;
+    margin: 0 30% 0;
+}
+.footer--join > div > span {
+    flex: 1;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    display: flex;
+}
+
+#footer-text {
+    height: 29px;
+    width: 100%;
+}
+
+#footer-text:focus + .footer--join > div > span {
+    border: 1px solid #47b2e4;
+} /*이게 안됨*/
+#footer-submit {
+    font-size: 16px;
+    width: auto;
+    background-color: #47b2e4;
+    height: 43px;
+    border-radius: 50px;
+    float: right;
+    padding: 0 20px 0;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+/*footer content section css*/
+.footer--content {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 12px 0;
+    margin: 0 15%;
+}
+.footer--content-text {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    width: 100%;
+}
+.footer--content-text > div {
+    display: flex;
+    flex-direction: column;   
+}
+.footer--content-2 {
+    flex: 2;
+}
+.footer--content-1 {
+    flex: 1.2;
+}
+#footer--content-title {
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #37517e;
+    padding-bottom: 16px;
+}
+.footer--content-text > div > p {
+    margin-bottom: 10px;
+}
+.footer--content-text > div > div {
+    margin-top: 15px;
+}
+.footer--content-text > div > h4 {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 0;
+}
+li > .bi-chevron-right {
+    color: #47b2e4;
+}
+.footer--content-text > div > ul > li {
+    padding: 10px 0;
+}
+.footer--content-2 > p {
+    margin-bottom: 16px;
+}
+.footer--content-icon {
+    display: flex;
+}
+.footer--content-icon > a {
+    width: 40px;
+    height: 40px;
+    background-color: #37517e;
+    border: 1px solid gray;
+    border-radius: 100%;
+    display: inline-block;
+}
+.fotter--content-icon > a > i {
+    align-items: center;
+} 
+.footer--content-adress {
+    padding: 70px 12px;
+    color: #37517e;
+}
+a {
+    text-decoration: none;
+}
+input {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    outline: none;
+}
+strong {
+    font-weight: bolder;
+} /*왜안댐*/
