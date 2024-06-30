@@ -116,9 +116,10 @@ header {
 #team {
     height: auto;
     scroll-margin-top: 88px;
-    padding-top:60px;
+    padding-top:160px;
     padding-bottom:60px;
     background-color: #ffffff;
+    
 }
 /*일단 나중에 화면 크기 변경 하기*/
 .team--title {
@@ -142,17 +143,19 @@ header {
     height: 3px;
     background-color: #47b2e4;
 }
-/*비포 애프터 구현이 안댐..*/
-/*.team--title span::before {
-    display: block;
-    width: 60px;
-    height: 3px;
-    background: red;
+
+/*비포 애프터 좀 더 공부하기 머라는지 모르겟다..*/
+.team--title  span:before {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 1px;
+    background: color-mix(in srgb, #444444, transparent 60%);
     left: 0;
     right: 0;
-    bottom: 0;
-    margin: auto; 
-}*/ 
+    margin: auto;
+}
+
 
 
 /*team section - team member box css*/
