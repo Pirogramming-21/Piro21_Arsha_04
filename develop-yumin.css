@@ -432,21 +432,33 @@ li > .bi-chevron-right {
 }
 .footer--content-icon {
     display: flex;
+    justify-content: flex-start;
+    
 }
-.footer--content-icon > a {
-    width: 40px;
-    height: 40px;
+/*아이콘 border 넣어야함*/
+/*.footer--content-icon > a {
+    display: block;
     background-color: #37517e;
     border: 1px solid gray;
     border-radius: 100%;
-    display: inline-block;
-}
+    padding: 20px;
+} 왜 안되는 것일까... */ 
 .fotter--content-icon > a > i {
     align-items: center;
+    font-size: 16px;
+    color: color-mix(in srgb, #444444, transparent 20%);
 } 
 .footer--content-adress {
     padding: 70px 12px;
     color: #37517e;
+}
+.footer--content-adress > div {
+    font-size: 13px;
+    margin-top: 10px;
+}
+.footer--content-adress > div > span {
+    cursor: pointer;
+    color: #47b2e4
 }
 a {
     text-decoration: none;
