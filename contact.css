@@ -10,6 +10,7 @@
 #contact {
     display: flex;
     flex-direction: column;
+    padding: 60px 0;
 }
 .contact-title {
     text-align: center;
@@ -49,6 +50,7 @@
     min-width: 300px;
 }
 .info-item {
+    display: flex;
     margin-bottom: 20px;
 }
 iframe {
@@ -75,7 +77,16 @@ iframe {
     padding: 30px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+}
+.info-item > div > h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    margin-bottom: 5px;
+}
+.info-item > div > p {
+    font-size: 14px;
 }
 
 .form-head {
@@ -88,19 +99,68 @@ iframe {
 }
 
 .form-control {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+.form-control2 {
     width: 100%;
     padding: 10px;
     border: 1px solid #ced4da;
     border-radius: 4px;
 }
+.bi-geo-alt {
+    ont-size: 20px;
+    color: var(--accent-color);
+    background: color-mix(in srgb, var(--accent-color), transparent 92%);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+}
+.bi-telephone {
+    font-size: 20px;
+    color: var(--accent-color);
+    background: color-mix(in srgb, var(--accent-color), transparent 92%);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+}
+.bi-envelope {
+    font-size: 20px;
+    color: var(--accent-color);
+    background: color-mix(in srgb, var(--accent-color), transparent 92%);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+}
+.col-md-12 {
+    flex: 0 0 auto ;
+    width: 100%;
+    text-align: center ;
+}
 
 button[type="submit"] {
-    justify-content: center;
     background-color: var(--accent-color);
     color: var(--contrast-color);
     border: none;
     padding: 10px 20px;
-    border-radius: 4px;
+    border-radius: 50px;
     cursor: pointer;
 }
 

@@ -1,3 +1,4 @@
+@import url(Availables.css);
 :root {
     --background-color: #ffffff;
     --default-color: #444444;
@@ -11,12 +12,15 @@
     --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --heading-font: "Jost", sans-serif;
     --nav-font: "Poppins", sans-serif;
+    --font-family: var(--default-font);
 }
+
 #Frequent {
     display: flex;
     flex-direction: column;
     background-color: #f5f6f8;
     surface-color: #ffffff;
+    padding: 60px 0;
 }
 .Frequent-title {
     text-align: center;
@@ -36,6 +40,8 @@
 }
 .Frequent-title > p {
     margin-bottom: 0;
+    font-size: 16px;
+    font-family: var(--default-font);
 }
 .faq {
     max-width: 800px;
