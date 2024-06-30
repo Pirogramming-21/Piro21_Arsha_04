@@ -65,6 +65,7 @@
 
 .bi-quote.quote-icon-right {
     margin-left: 5px;
+    transform: rotate(90deg)
 }
 .swiper-pagination-bullet {
     width: 12px;
