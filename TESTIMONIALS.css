@@ -1,4 +1,14 @@
+:root {
+    --background-color: #ffffff;
+    --default-color: #444444;
+    --heading-color: #37517e;
+    --accent-color: #47b2e4;
+    --surface-color: #ffffff;   
+    --contrast-color: #ffffff;
+    --bs-gutter-y: 1.5rem;
+}
 .testimonials-title >h2{
+    padding: 60px 0;
     text-align: center;
     font-size: 32px;
     font-weight: 700;
@@ -6,4 +16,60 @@
     padding-bottom: 20px;
     text-transform: uppercase;
     position: relative;
+}
+.testimonials-title  > p {
+    text-align: center;
+    padding-bottom: 60px;
+}
+.testimonials-item ,.stars {
+    text-align: center;
+}
+.testimonials-item > img {
+    width: 120px;
+    border-radius: 50%;
+    border: 4px solid var(--background-color);
+    margin: 0 auto;
+}
+.testimonials-item > h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+}
+.testimonials-item > h4 {
+    font-size: 14px;
+    color: 
+    color-mix(in srgb, var(--default-color), transparent 40%);
+    margin: 0 0 15px 0;
+}
+.stars {
+    color: #ffc107;
+}
+#testimonials > p {
+    font-style: italic;
+    text-align: center;
+    position: relative;
+    padding: 0 20px;
+}
+
+.bi-quote.quote-icon-left, .bi-quote.quote-icon-right {
+    color: rgba(71, 178, 228, 0.5); 
+    font-size: 26px;
+    position: relative;
+}
+
+.bi-quote.quote-icon-left {
+    margin-right: 5px;
+}
+
+.bi-quote.quote-icon-right {
+    margin-left: 5px;
+}
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background-color: 
+    color-mix(in srgb, var(--default-color), transparent 85%)
 }
