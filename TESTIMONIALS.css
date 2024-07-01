@@ -12,6 +12,7 @@
     --heading-font: "Jost", sans-serif;
     --nav-font: "Poppins", sans-serif;
 }
+
 #testimonials {
     display: flex;
     flex-direction: column;
