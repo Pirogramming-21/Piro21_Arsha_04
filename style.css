@@ -180,9 +180,11 @@ body {
 
 .about-content1 {
     box-sizing: border-box;
+    padding-left: 30px;
     width: 45%; 
-    position: relative;
     left: 160px; 
+    line-height: 20px;
+    word-break: normal;
 }
 
 .about-content1 p {
@@ -215,9 +217,11 @@ body {
 }
 
 .about-content2 {
+    padding-right: 30px;
     width: 45%;
-    position: relative;
     top: -16px;
+    line-height: 20px;
+    word-break: keep-all;
 }
 
 .about-content2 p{
@@ -324,26 +328,29 @@ body {
     transition: 0.5s;
 }
 
+.about-whyus-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .about-img1 {
     display: inline-block;
     max-width: 30%;
-    position: absolute;
-    left: 1050px;
-    bottom: -800px;
+    margin-right: 150px;
 }
 
 .about-skill {
     color: var(--default-color);
     background-color: var(--background-color);
-    display: block; 
     font-size: 0;
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
     display: flex;
     flex-wrap: wrap;
-    margin-top: calc(-1* var(--bs-gutter-y));
-    margin-right: calc(-.5* var(--bs-gutter-x));
-    margin-left: calc(-.5* var(--bs-gutter-x));
+    align-items: center;
+    gap: 50px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .about-img2 {
@@ -368,6 +375,10 @@ body {
 }
 
 .about-skill p {
+    margin: 20px 0;
+    line-height: 30px;
+    font-size: 16px;
+    display: block;
     color: color-mix(in srgb, var(--default-color), transparent 30%);
     font-style: italic;
     margin-bottom: 1rem;
