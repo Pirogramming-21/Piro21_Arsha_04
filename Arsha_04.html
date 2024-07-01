@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./service_portfolio.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./develop-yumin-media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -43,14 +44,14 @@
             <div class="header--nav">
                 <h1>ARSHA</h1>
                 <div class="header--nav-menu">
-                    <a href="">Home</a>
-                    <a href="">About</a>
-                    <a href="">Services</a>
-                    <a href="">Portfolio</a>
-                    <a href="">Team</a>
-                    <a href="">Pricing</a>
-                    <a href="">Dropdown</a>
-                    <a href="">Contact</a>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#team">Team</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#home">Dropdown</a>
+                    <a href="#contact">Contact</a>
                 </div>
                 <a href="">Get Started</a>
             </div>
@@ -129,8 +130,66 @@
         </section>
     
         <section id="whyus">
+            <div class="about-whyus">
+                <h1>Eum ipsam laborum deleniti <b>pariatur architecto aut<br> nihil</b></h1>
+                <div class="about-whyus-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br>magna aliqua. Duis aute irure dolor in reprehenderit</p>
+                </div>
+                <div class="about-whyus-container">
+                    <div id="about-container">
+                        <div class="about-whyus-container-item1">
+                            <h3><span>01</span>Non consectetur a erat nam at lectus urna duis?</h3>
+                            <i class="bi bi-chevron-right"></i>
+                        </div>
+                        <div class="about-whyus-container-item2">
+                            <h3><span>02</span>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
+                            <i class="bi bi-chevron-right"></i>
+                        </div>
+                        <div class="about-whyus-container-item3">
+                            <h3><span>03</span>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                            <i class="bi-chevron-right"></i>
+                        </div>
+                    </div>
+                        <img src="./why-us.png" class="about-img1" alt="about image1">
+                </div>
+            </div>
+        </section>
+        
+        <section id="skill">
+            <div class="about-skill">
+                <img src="./skills.png" class="about-img2" alt="about image2">
+                <div class="about-skill-content">
+                    <h1>Voluptatem dignissimos provident quasi<br>corporis voluptas</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br> ut labore et dolore magna aliqua.</p>
+                    <div class="progress1">
+                        <div class="about-skill1"><span>HTML</span><i class="about-skill-val1">100%</i></div>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar1"></div>
+                        </div>
+                    </div>
+                    <div class="progress2">
+                        <div class="about-skill2"><span>CSS</span><i class="about-skill-val2">90%</i></div>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar2"></div>
+                        </div>
+                    </div>
+                    <div class="progress3">
+                        <div class="about-skill3"><span>JAVASCRIPT</span><i class="about-skill-val3">75%</i></div>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar3"></div>
+                        </div>
+                    </div>
+                    <div class="progress4">
+                        <div class="about-skill4"><span>PHOTOSHOP</span><i class="about-skill-val4">55%</i></div>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar4"></div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
         </section>
       </main>
+
       <section id="services" class="services section light-background">
         <div class="container section-title aos-init aos-animate" data-aos="fade-up">
           <h2>Services</h2>
@@ -197,14 +256,14 @@
           <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
             <ul class="portfolio-filters isotope-filters aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app" class="">App</li>
-              <li data-filter=".filter-product">Card</li>
-              <li data-filter=".filter-branding">Web</li>
+              <li data-filter=".filter-app" class="portfolio-app">App</li>
+              <li data-filter=".filter-product"class="portfolio-product">Card</li>
+              <li data-filter=".filter-branding"class="portfolio-branding">Web</li>
             </ul><!-- End Portfolio Filters -->
             <div id="portfolio-grid">
-                <div class="row gy-4 isotope-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" style="position: relative; height: 909.549px;">
+                <div class="row gy-4 isotope-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
     
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" style="position: absolute;left: 0px;top: 0px;">
+                <div id="app1" class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
                     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
                     <div class="portfolio-info">
                     <h4>App 1</h4>
@@ -214,7 +273,7 @@
                     </div>
                 </div><!-- End Portfolio Item -->
     
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" style="position: absolute; left: 320px; top: 0px;">
+                <div id="product1" class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
                     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
                     <div class="portfolio-info">
                     <h4>Product 1</h4>
@@ -224,7 +283,7 @@
                     </div>
                 </div><!-- End Portfolio Item -->
     
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding" style="position: absolute; left: 640px; top: 0px;">
+                <div id="branding1" class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
                     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
                     <div class="portfolio-info">
                     <h4>Branding 1</h4>
@@ -234,7 +293,7 @@
                     </div>
                 </div><!-- End Portfolio Item -->
     
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" style="position: absolute; left: 640px; top: 190.5px;">
+                <div id="app2" class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
                     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
                     <div class="portfolio-info">
                     <h4>App 2</h4>
@@ -244,7 +303,7 @@
                     </div>
                 </div><!-- End Portfolio Item -->
     
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" style="position: absolute; left: 320px; top: 222.462px;">
+                <div id="product2" class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" >
                     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
                     <div class="portfolio-info">
                     <h4>Product 2</h4>
@@ -254,7 +313,7 @@
                     </div>
                 </div><!-- End Portfolio Item -->
     
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding" style="position: absolute; left: 0px; top: 324.062px;">
+                <div id="branding2" class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding" >
                     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
                     <div class="portfolio-info">
                     <h4>Branding 2</h4>
@@ -264,7 +323,7 @@
                     </div>
                 </div><!-- End Portfolio Item -->
     
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" style="position: absolute; left: 640px; top: 410.225px;">
+                <div id="app3" class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" >
                     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
                     <div class="portfolio-info">
                     <h4>App 3</h4>
@@ -274,7 +333,7 @@
                     </div>
                 </div><!-- End Portfolio Item -->
     
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" style="position: absolute; left: 640px; top: 626.362px;">
+                <div id="product3" class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" >
                     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
                     <div class="portfolio-info">
                     <h4>Product 3</h4>
@@ -284,7 +343,7 @@
                     </div>
                 </div><!-- End Portfolio Item -->
     
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding" style="position: absolute; left: 320px; top: 688.924px;">
+                <div id="branding3" class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding" >
                     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
                     <div class="portfolio-info">
                     <h4>Branding 3</h4>
@@ -368,7 +427,7 @@
             </div>
         </article>
         <article id="pricing">
-            <div class="team--title">
+            <div class="pricing--title">
                 <div>Pricing</div>
                 <span></span>
                 <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
@@ -466,7 +525,7 @@
             <div class="faq-answer">
                 <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
             </div>
-        </div>
+        </div> 
         <div class="faq-item">
             <h3><i class="faq-icon bi bi-question-circle"></i>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
         </div>
