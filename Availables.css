@@ -39,6 +39,11 @@
     --nav-dropdown-hover-color: #47b2e4; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
   }
   
+
+  /* Header icon color - before animation :hover */
+  :root {
+    --header-before-color: rgba(255,255,255,.5);
+  }
   
   
   
