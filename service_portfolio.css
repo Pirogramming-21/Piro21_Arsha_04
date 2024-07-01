@@ -149,6 +149,7 @@ section, .section {
 .services .service-item:hover .stretched-link {
     color: var(--accent-color);
 }
+
 .services .service-item .icon {
     margin-bottom: 10px;
 }
