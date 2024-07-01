@@ -1,0 +1,123 @@
+@import url(Availables.css);
+:root {
+    --background-color: #ffffff;
+    --default-color: #444444;
+    --heading-color: #37517e;
+    --accent-color: #47b2e4;
+    --surface-color: #ffffff;   
+    --contrast-color: #ffffff;
+    --bs-gutter-y: 1.5rem;
+}
+:root {
+    --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Jost", sans-serif;
+    --nav-font: "Poppins", sans-serif;
+    --font-family: var(--default-font);
+}
+
+#Frequent {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f6f8;
+    surface-color: #ffffff;
+    padding: 60px 0;
+}
+.Frequent-title {
+    text-align: center;
+    padding-bottom: 60px;
+    position: relative;
+}
+.Frequent-title >h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+}
+.Frequent-title >h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: color-mix(in srgb, var(--default-color), transparent 60%);
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    margin: auto;
+}
+.Frequent-title >h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.Frequent-title > p {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-family: var(--default-font);
+}
+.faq {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.faq-item > h3:hover {
+    color: var(--accent-color);
+}
+.faq-item {
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.faq-item h3 {
+    display: flex;
+    background-color: white;
+    padding: 15px 20px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #444;
+    line-height: 24px;
+    cursor: pointer;
+    position: relative;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+}
+/* details summary */
+.faq-item h3::after {
+    content: '>';
+    position: absolute;
+    right: 20px;
+    transform: rotate(deg);
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item:first-child .faq-answer {
+    max-height: 1000px;
+    padding: 20px;
+}
+
+.faq-item:first-child h3::after {
+    transform: rotate(-90deg);
+}

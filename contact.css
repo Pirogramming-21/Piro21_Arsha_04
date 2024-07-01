@@ -1,0 +1,214 @@
+:root {
+    --background-color: #ffffff;
+    --default-color: #444444;
+    --heading-color: #37517e;
+    --accent-color: #47b2e4;
+    --surface-color: #ffffff;   
+    --contrast-color: #ffffff;
+    --bs-gutter-y: 1.5rem;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0;
+}
+
+.contact-title {
+    text-align: center;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.contact-title >h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+}
+.contact-title >h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: color-mix(in srgb, var(--default-color), transparent 60%);
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    margin: auto;
+}
+.contact-title >h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.contact-title > p {
+    margin-top: 30px;
+    margin-bottom: 0; 
+}
+.contact-information {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 calc(var(--bs-gutter-x) * 0.5);
+}
+.info-wrap {
+    background-color: var(--surface-color);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-top: 3px solid var(--accent-color);
+    border-bottom: 3px solid var(--accent-color);
+    padding: 30px;
+    flex: 1;
+    min-width: 300px;
+}
+.info-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+iframe {
+    border: 0;
+    width: 100%;
+    height: 270px;
+}
+
+:root {
+    --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Jost", sans-serif;
+    --nav-font: "Poppins", sans-serif;
+}
+.info-wrap, .contact-form {
+    flex: 1;
+    min-width: 300px;
+    max-width: calc(50% - 10px);
+}
+.contact-form {
+    background-color: var(--surface-color);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-top: 3px solid var(--accent-color);
+    border-bottom: 3px solid var(--accent-color);
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.info-item > div > h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    margin-bottom: 5px;
+}
+.info-item > div > p {
+    font-size: 14px;
+}
+
+.form-head {
+    flex: 1 1 calc(50% - 10px);
+    min-width: 200px;
+}
+
+.form-mid {
+    flex: 1 1 100%;
+}
+.faq-icon {
+    color: var(--accent-color);
+}
+.form-control {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+.form-control2 {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+.bi-geo-alt {
+    ont-size: 20px;
+    color: var(--accent-color);
+    background: color-mix(in srgb, var(--accent-color), transparent 92%);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+}
+.bi-geo-alt:hover {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+}
+.bi-telephone {
+    font-size: 20px;
+    color: var(--accent-color);
+    background: color-mix(in srgb, var(--accent-color), transparent 92%);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+}
+.bi-telephone:hover {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+}
+
+.bi-envelope {
+    font-size: 20px;
+    color: var(--accent-color);
+    background: color-mix(in srgb, var(--accent-color), transparent 92%);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+}
+.bi-envelope:hover {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+}
+.col-md-12 {
+    flex: 0 0 auto ;
+    width: 100%;
+    text-align: center ;
+}
+
+button[type="submit"] {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #31a9e1;
+}
