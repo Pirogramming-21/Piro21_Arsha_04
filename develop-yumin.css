@@ -174,25 +174,34 @@ header {
     margin-top: 20px;
     padding-bottom: 20px;
     }
-.team--title > span {
-    width: 60px;
-    height: 3px;
-    margin-bottom: 20px;
-    background-color: #47b2e4;
-    display: block;
+.team--title > p {
+    margin-top: 30px;
 }
 
-
+.team--title-team:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #47b2e4;
+    margin:auto;
+    left: 3px;
+    right: 0;
+    bottom: 0;  
+}
 /*비포 애프터 좀 더 공부하기 머라는지 모르겟다..*/
-.team--title  span:before {
+.team--title-team:before {
     content: "";
     position: absolute;
     width: 160px;
     height: 1px;
     background: color-mix(in srgb, #444444, transparent 60%);
-    left: 0;
-    right: 0;
+    left: 130px;
+    right: 1000px;
+    top: 50px;
     margin: auto;
+    margin-right: 1px;
 }
 
 
@@ -323,7 +332,7 @@ header {
     }
 
 .pricing--title > div > p {
-    margin-bottom: 60px;
+    margin-top: 30px;
 }
 .pricing--title > div > p:before {
     content: "";
@@ -335,7 +344,7 @@ header {
     margin:auto;
     left: 0;
     right: 0;
-    bottom: 0;  
+    bottom: 27px;  
 }
 #pricing--box-content2 {
     border-top: 3px solid #47b2e4;
@@ -350,13 +359,15 @@ header {
     background: color-mix(in srgb, var(--default-color), transparent 60%);
     left: 0;
     right: 0;
-    bottom: 0;
-    margin: auto;  
+    bottom: 25px;
+    margin: auto; 
+    margin-bottom: 3px; 
 }
 
 .pricing--box {
     display: flex;
-    justify-content: space-around;  
+    justify-content: space-around; 
+    margin-top: 60px;
 }
 .pricing--box-content > div {
     margin-bottom: 15px;
