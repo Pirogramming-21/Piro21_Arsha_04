@@ -2,13 +2,21 @@
 @import url(./reset.css);
 
 /*header css*/
+:root {
+    --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Jost", sans-serif;
+    --nav-font: "Poppins", sans-serif;
+}
+
+
 header {
     position: fixed;
     width: 100%;
     z-index: 1000;
 }
 .header--top {
-    background-color: #023b6d;
+    font-size: 13px;
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -90,6 +98,7 @@ header {
     align-content: center;
 }
 .header--nav-menu {
+    
     display: flex;
     align-items: center;
 }
@@ -97,6 +106,7 @@ header {
     padding: 18px 15px;
     text-decoration: none;
     color: #ffffff;
+    font-family: var(--nav-font);
 }
 .header--nav > a {
     padding: 8px 25px;
@@ -348,6 +358,7 @@ footer {
     margin-bottom: 8px;
 }
 .footer--join > p {
+    font-size: 16px;
     margin-bottom: 16px;
 }
 .footer--join > div {
@@ -403,6 +414,10 @@ footer {
 }
 .footer--content-2 {
     flex: 2;
+}
+.footer--content-2 > p {
+    font-family: var(--default-font);
+    margin-bottom: 10px;
 }
 .footer--content-1 {
     flex: 1.2;
@@ -462,7 +477,7 @@ li > .bi-chevron-right {
 }
 .footer--content-adress > div > span {
     cursor: pointer;
-    color: #47b2e4
+    color: #47b2e4;
 }
 a {
     text-decoration: none;
@@ -476,5 +491,5 @@ input {
     outline: none;
 }
 strong {
-    font-weight: bolder;
+    font-weight: bolder !important;
 } /*왜안댐*/
