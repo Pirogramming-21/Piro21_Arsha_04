@@ -143,7 +143,7 @@ iframe {
     border-radius: 4px;
 }
 .bi-geo-alt {
-    ont-size: 20px;
+    font-size: 20px;
     color: var(--accent-color);
     background: color-mix(in srgb, var(--accent-color), transparent 92%);
     width: 44px;
