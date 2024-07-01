@@ -481,6 +481,7 @@ footer {
 }
 .footer--content-text {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: start;
     width: 100%;
@@ -569,4 +570,9 @@ input {
 }
 strong {
     font-weight: bolder !important;
-} /*왜안댐*/
+} 
+@media screen and (max-width: 768px) {
+    .footer--content-3 {
+        width: 100%;
+    }
+}
