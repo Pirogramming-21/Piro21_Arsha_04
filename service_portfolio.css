@@ -167,7 +167,9 @@ section, .section {
     color: var(--heading-color);
     transition: ease-in-out 0.3s;
 }
-
+.services .service-item p {
+    line-height: 25px;
+}
 .call-to-action {
     padding: 120px 0;
     position: relative;
@@ -262,6 +264,7 @@ section, .section {
     color: var(--contrast-color);
     background-color: var(--accent-color);
 }
+
 #portfolio-grid {
     display: flex;
     justify-content: center;
