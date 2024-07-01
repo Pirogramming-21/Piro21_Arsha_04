@@ -323,11 +323,11 @@ section, .section {
     padding-top: 8px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 0) {
 
-    #portfolio .row {
-        width: 100%;
-    }
+}
+
+@media (min-width: 576px) {
 
 }
 
@@ -343,7 +343,6 @@ section, .section {
 
 }
 
-
 @media (min-width: 992px) {
     .col-lg-4 {
         flex: 0 0 auto;
@@ -353,5 +352,22 @@ section, .section {
     #portfolio .row {
         width: 960px;
     }
+
+}
+
+@media (min-width: 1200px) {
+    #services-grid {
+        display: grid;
+        grid-template-rows: repeat(1,275px);
+        grid-template-columns: repeat(4,261px);
+        gap: 24px;
+        place-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 1400px) {
+
 
 }
