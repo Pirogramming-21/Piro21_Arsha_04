@@ -137,6 +137,19 @@ section, .section {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.services .service-item:hover {
+    transform: translateY(-10px);
+}
+.services .service-item {
+    background-color: var(--surface-color);
+    padding: 50px 10px;
+    transition: all ease-in-out 0.4s;
+    height: 100%;
+}
+.services .service-item:hover .stretched-link {
+    color: var(--accent-color);
+}
+
 .services .service-item .icon {
     margin-bottom: 10px;
 }
