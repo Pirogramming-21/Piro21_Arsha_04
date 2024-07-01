@@ -212,3 +212,11 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #31a9e1;
 }
+@media screen and (max-width: 768px) {
+    .contact-information {
+        flex-wrap: wrap;
+    }
+    .info-wrap, .contact-form {
+        max-width: 100%;
+    }
+}
