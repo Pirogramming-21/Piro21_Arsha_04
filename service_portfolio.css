@@ -335,6 +335,11 @@ section, .section {
         grid-template-rows: repeat(4,251px);
         grid-template-columns: repeat(1,516px);
     }
+
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
 }
 
 @media (min-width: 768px) {
@@ -348,9 +353,63 @@ section, .section {
         width: 50%;
     }
 
-    #portfolio .row {
+    #portfolio-grid .row {
+        position: relative;
         width: 720px;
+        height: 1477.85px;
     }
+    #portfolio-grid #app1 {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+
+    #portfolio-grid #product1 {
+        position: absolute;
+        left: 360px;
+        top: 0px;
+    }
+    #portfolio-grid #branding1 {
+        position: absolute;
+        left: 360px;
+        top: 249.288px;
+    }
+    #portfolio-grid #app2 {
+        position: absolute;
+        left: 0px;
+        top: 364.612px
+    }
+
+    #portfolio-grid #product2 {
+        position: absolute;
+        left: 360px;
+        top: 462.288px;
+    }
+
+    #portfolio-grid #branding2 {
+        position: absolute;
+        left: 0px;
+        top: 610.787px;
+    }
+
+    #portfolio-grid #app3 {
+        position: absolute;
+        left: 360px;
+        top: 988.551px;
+    }
+
+    #portfolio-grid #product3 {
+        position: absolute;
+        left: 0px;
+        top: 1134.42px;
+    }
+
+    #portfolio-grid #branding3 {
+        position: absolute;
+        left: 360px;
+        top: 1230.65px;
+    }
+
 
 }
 
@@ -368,6 +427,64 @@ section, .section {
     #portfolio .row {
         width: 960px;
     }
+
+    #portfolio-grid .row {
+        position: relative; 
+        height: 909.549px;
+    }
+
+    #portfolio-grid #app1 {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+
+    #portfolio-grid #product1 {
+        position: absolute;
+        left: 320px; 
+        top: 0px;
+    }
+    #portfolio-grid #branding1 {
+        position: absolute; 
+        left: 640px; 
+        top: 0px;
+    }
+    #portfolio-grid #app2 {
+        position: absolute;
+        left: 640px;
+        top: 190.5px;
+    }
+
+    #portfolio-grid #product2 {
+        position: absolute;
+        left: 320px;
+        top: 222.462px;
+    }
+
+    #portfolio-grid #branding2 {
+        position: absolute;
+        left: 0px; 
+        top: 324.062px;
+    }
+
+    #portfolio-grid #app3 {
+        position: absolute; 
+        left: 640px; 
+        top: 410.225px;
+    }
+
+    #portfolio-grid #product3 {
+        position: absolute; 
+        left: 640px; 
+        top: 626.362px;
+    }
+
+    #portfolio-grid #branding3 {
+        position: absolute; 
+        left: 320px; 
+        top: 688.924px;
+    }
+
 
 }
 
@@ -387,7 +504,7 @@ section, .section {
 
     .col-xl-3 {
         flex: 0 0 auto;
-        width: 25%;
+        width: 33.33333333%;
     }
 
     .cta-btn-container {
@@ -397,6 +514,64 @@ section, .section {
     .text-xl-start {
         text-align: left !important;
     }
+
+    #portfolio-grid .row {
+        width: 1140px;
+        height: 1079.35px;
+    }
+    #portfolio-grid #app1 {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+
+    #portfolio-grid #product1 {
+        position: absolute;
+        left: 380px;
+        top: 0px;
+    }
+    #portfolio-grid #branding1 {
+        position: absolute;
+        left: 760px;
+        top: 0px;
+    }
+    #portfolio-grid #app2 {
+        position: absolute;
+        left: 760px;
+        top: 224.25px;
+    }
+
+    #portfolio-grid #product2 {
+        position: absolute;
+        left: 380px;
+        top: 262.7px;
+    }
+
+    #portfolio-grid #branding2 {
+        position: absolute;
+        left: 0px;
+        top: 384.888px;
+    }
+
+    #portfolio-grid #app3 {
+        position: absolute;
+        left: 760px;
+        top: 483.65px;
+    }
+
+    #portfolio-grid #product3 {
+        position: absolute;
+        left: 760px;
+        top: 738.737px;
+    }
+
+    #portfolio-grid #branding3 {
+        position: absolute;
+        left: 380px;
+        top: 818.862px;
+    }
+
+
 
 }
 
