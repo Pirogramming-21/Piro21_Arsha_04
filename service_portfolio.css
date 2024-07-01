@@ -377,6 +377,27 @@ section, .section {
         grid-template-columns: repeat(4,261px);
     }
 
+    .container .row {
+        display: flex;
+    }
+    .col-xl-9 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+
+    .col-xl-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+
+    .cta-btn-container {
+        margin-left: 35px;
+    }
+
+    .text-xl-start {
+        text-align: left !important;
+    }
+
 }
 
 @media (min-width: 1400px) {
@@ -384,5 +405,6 @@ section, .section {
         grid-template-rows: repeat(1,275px);
         grid-template-columns: repeat(4,306px);
     }
+
 
 }
